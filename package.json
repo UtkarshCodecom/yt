@@ -1,0 +1,19 @@
+{
+    "name": "youtube_downloader",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon ./code.js",
+        "start": "node ./code.js"
+    },
+    "keywords": [],
+    "author": "utkarsh",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1",
+        "nodemon": "^2.0.9",
+        "ytdl": "^1.4.1",
+        "ytdl-core": "^4.8.3"
+    }
+}
