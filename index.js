@@ -7,7 +7,7 @@ app.use(express.static("public"));
 
 
 app.get("/",function(request,response){
-	response.sendFile(__dirname + "public/index.html");
+	response.sendFile("public/index.html");
 });
 
 app.get("/videoInfo",async function(request,response){
