@@ -6,8 +6,10 @@ app.use(express.json());
 app.use(express.static("public"));
 
 
-app.get('/', (req, res) => {
-	res.send('Running');
+app.get('/', function (req, res) {
+  res.statusCode = 302;
+  res.setHeader("Location", "https://yt-dl.netlify.app/");
+  res.end();
 });
 
 app.get("/videoInfo",async function(request,response){
