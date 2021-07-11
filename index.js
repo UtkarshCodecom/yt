@@ -6,8 +6,8 @@ app.use(express.json());
 app.use(express.static("public"));
 
 
-app.get("/",function(request,response){
-	response.sendFile("public/index.html");
+app.get('/', (req, res) => {
+	res.send('Running');
 });
 
 app.get("/videoInfo",async function(request,response){
